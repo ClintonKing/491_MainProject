@@ -3947,7 +3947,8 @@ dialog::backdrop {
   width: 100%;
   padding: 1.125rem 1.25rem 1.5rem; }
   .joyride-content-wrapper .button {
-    margin-bottom: 0 !important; }
+    margin-bottom: 0 !important;
+    border-radius: 3px;}
   .joyride-content-wrapper .joyride-prev-tip {
     margin-right: 10px; }
 
