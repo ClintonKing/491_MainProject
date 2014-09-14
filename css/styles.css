@@ -1,3 +1,24 @@
 .buttonmatch{
     min-height: 70px;
 }
+
+.white,
+.panel .white{
+    color: white;
+}
+
+.blueback{
+    background-color: #56A0D3;
+    border: 0px;
+    border-bottom: 2px solid white;
+}
+
+#smallLogo{
+    height: 50%;
+    width: 50%;
+}
+
+.seperator,
+.panel .seperator{
+    margin-bottom: 1.25em;
+}

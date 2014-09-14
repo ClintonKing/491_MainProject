@@ -18,14 +18,14 @@
 	  </section>
 
 	  <section class="middle tab-bar-section">
-	   <h1 class="title">ezFlyer</h1>
+	   <h1 class="title"></h1>
 	  </section>
       </nav>
 
       <aside class="left-off-canvas-menu">
 	<ul class="off-canvas-list">
 	  <li><label>Menu</label></li>
-	  <li><a href="#">New Flyers (1)</a></li>
+	  <li><a href="#">Home</a></li>
 	  <li><a href="#">Saved Flyers</a></li>
 	  <li><a href="#">Tags</a></li>
 	  <li><a href="#">Settings</a></li>
@@ -33,12 +33,12 @@
       </aside>
 
       <section class="main-section"><!-- content goes here -->
-	<div class="panel">
-	  <h1>BIG CENTERED UNC LOGO HERE</h1>
-	  <h3> ezFlyer: An easier way to spread event information.</p>
+	<div class="panel text-center blueback" id="return">
+	  <img id="smallLogo" src="img/unc_logo.png">
+	  <h2 class="white"> ezFlyer: An easier way to spread event information.</h2>
 	</div>
 	<div class="row">
-	  <div class="panel">
+	  <div class="panel seperator">
 	    <h1>Latest Flyer Here</h1>
 	    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 	  </div>
@@ -51,7 +51,7 @@
 	    <a href="#" class="button radius centered buttonmatch">More Info</a>
 	  </div>  
 	</div>
-      </section>
+      </section> <!-- Main content ends. -->
 
       <a class="exit-off-canvas"></a>
 
@@ -66,15 +66,20 @@
       <li data-id="menututorial" data-button="Next" data-options="prev_button: false" >
 	<p>Use the side-menu to view recent or saved flyers, and to change your filtering settings.</p>
       </li>
-      <li data-id="buttontutorial" data-button="End" data-options="prev_button: false">
+      <li data-id="buttontutorial" data-button="Next" data-options="prev_button: false">
 	<p>Use the bottom buttons to delete a Flyer or see more about the event/ group.</p>
+      </li>
+      <li data-id="return" data-button="End" data-options="prev_button: false">
+	<h4>Enjoy!</h4>
+	<p>With ezFlyer you'll always know what's happening on campus.</p>
       </li>
     </ol>
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.joyride.js"></script>
-    <script src="js/vendor/jquery.cookie.js"></script>
+    <script src="js/vendor/jquery.cookie.js"></script>.
+    <script src="js/foundation/foundation.offcanvas.js"></script>
     <script>
       $(document).foundation('joyride', 'start');
     </script>
