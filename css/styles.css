@@ -22,3 +22,12 @@
 .panel .seperator{
     margin-bottom: 1.25em;
 }
+
+.uncNavy{
+    background-color: #34617F;
+}
+
+.flyerP{
+    padding: 10px;
+    border: 0px;
+}
