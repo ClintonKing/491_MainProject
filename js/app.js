@@ -1,15 +1,23 @@
-function launchCamera(){
-    navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-    destinationType: Camera.DestinationType.DATA_URL
-});
+
+
+//contains code for camera
+
+function capturePhoto(){
+    navigator.camera.getPicture(uploadPhoto,null,{sourceType:1,quality:60});
 }
 
-function onSuccess(imageData) {
-    var image = document.getElementById('myImage');
-    image.src = "data:image/jpeg;base64," + imageData;
-    console.log;
+function uploadPhoto(data){
+    
+    
+    cameraPic.src = data;
+    navigator.notification.alert(
+        'Your photo has been uploaded', //message
+        okay,  //callback
+        'Photo Uploaded', //title
+        'Ok'  //button name
+    );
 }
 
-function onFail(message) {
-    alert('Failed because: ' + message);
+function okay(){
+    
 }
