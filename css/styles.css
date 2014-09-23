@@ -31,3 +31,7 @@
     padding: 10px;
     border: 0px;
 }
+
+#map-canvas{
+    height: 300px;
+}

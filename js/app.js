@@ -1,4 +1,4 @@
-
+document.addEventListener("deviceReady", onDeviceReady, false);
 
 //contains code for camera
 
@@ -20,4 +20,13 @@ function uploadPhoto(data){
 
 function okay(){
     
+}
+
+
+//maps stuff
+
+function onDeviceReady(){
+    console.log("onDeviceReady()");
+    navigator.geolocation.getCurrentPosition(generateMap, onError);
+    console.log(position);
 }
