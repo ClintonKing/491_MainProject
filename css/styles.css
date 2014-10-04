@@ -10,7 +10,6 @@
 .blueback{
     background-color: #56A0D3;
     border: 0px;
-    border-bottom: 2px solid white;
 }
 
 #smallLogo{
@@ -21,6 +20,7 @@
 .seperator,
 .panel .seperator{
     margin-bottom: 1.25em;
+    margin-top: 70px;
 }
 
 .uncNavy{
@@ -32,6 +32,4 @@
     border: 0px;
 }
 
-#map-canvas{
-    height: 300px;
-}
+
