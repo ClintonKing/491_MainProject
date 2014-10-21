@@ -22,6 +22,9 @@ function updateFlyer(){
     //var newFlyerRef = flyerListRef.child(flyName);
     flyerListRef.push({ name:flyName, desc:flyDesc, date:flyDate, time:flyTime, location:flyPlace, image:flyImage });
     console.log(flyName);
+    
+    document.getElementById("newFlyerForm").reset();
+    
 }
 
 
