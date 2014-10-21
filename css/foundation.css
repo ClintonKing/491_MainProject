@@ -1101,7 +1101,7 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #008cba;
+  background-color: #34617F;
   border-color: #007095;
   color: white;
   transition: background-color 300ms ease-out; }
@@ -2680,7 +2680,8 @@ meta.foundation-mq-topbar {
         float: none; } }
   .icon-bar > * {
     font-size: 1rem;
-    padding: 1.25rem; }
+    padding: 1.25rem;
+    padding-bottom: .75rem; }
     .icon-bar > * i + label, .icon-bar > * img + label {
       margin-top: .0625rem; }
     .icon-bar > * i {

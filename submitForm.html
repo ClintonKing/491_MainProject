@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Submit New Flyer</title>
+
+<link rel="stylesheet" href="css/foundation.css" />    
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="img/foundation-icons/foundation-icons.css" />
+<script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</head>
+
+<body class="blueback">
+
+<div class="icon-bar four-up fixed" id="headroomNav">
+  <a class="item">
+    <i class="fi-home"></i>
+    <label>Home</label>
+  </a>
+  <a class="item" href="submitForm.html">
+    <i class="fi-page-add" id="menututorial"></i>
+    <label class="center" >Create</label>
+  </a>
+  <a class="item">
+    <i class="fi-filter"></i>
+    <label>Tags</label>
+  </a>
+  <a class="item" href="users.html">
+    <i class="fi-widget"></i>
+    <label>User</label>
+  </a>
+</div>    
+	<div class="seperator"></div>
+
+
+
+<div class="row">
+    <div class="small-12 columns">
+        <h2 class="white">Create A New Flyer!</h2>
+    </div>
+</div>
+
+<form id="newFlyerForm">
+<div class="row">
+    <div class="small-12 columns">
+        <label class="white">Event Name
+            <input id="flyNameInput" type="text" placeholder="Event" />
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="small-12 columns">
+        <label class="white">Event Description
+            <input id="flyDescInput" type="text" placeholder="Description" />
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="small-4 columns">
+        <label class="white">Date
+            <input id="flyDateInput" type="text" placeholder="Date" />
+        </label>
+    </div>
+    <div class="small-4 columns">
+        <label class="white">Time
+            <input id="flyTimeInput" type="text" placeholder="When" />
+        </label>
+    </div>
+    <div class="small-4 columns">
+        <label class="white">Location
+            <input id="flyPlaceInput" type="text" placeholder="Where" />
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="small-12 columns">
+        <label class="white">Flyer Image URL
+            <input id="flyImageInput" type="text" placeholder="http://" />
+        </label>
+    </div>
+</div>
+<div class="row">
+    <div class="large-12 columns">
+      <label class="white">Choose a Tag
+        <select>
+          <option value="jomc">JOMC</option>
+          <option value="fitness">Fitness</option>
+          <option value="business">Business School</option>
+          <option value="pizza">Free Pizza</option>
+        </select>
+      </label>
+    </div>
+  </div>
+</form>
+
+<div class="row">
+    <div class="small-12 columns">
+        <button onclick="updateFlyer();">Submit</button>
+    </div>
+</div>
+
+<!-- JS STARTS HERE -->
+
+ <script src="js/headroom.js"></script>
+ <script>
+      var myElement = document.querySelector("#headroomNav");
+      var headroom = new Headroom(myElement);
+      headroom.init();
+    </script>
+ <script>
+  
+    
+    
+ </script>
+
+</body>
+</html>

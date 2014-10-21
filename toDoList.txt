@@ -1,0 +1,11 @@
+Plan:
+
+1. Write JS for submit form based on leaderboard example. Add success prompt to submit button.
+
+2. Have index.html pull from firebase and write trees to html in style of masonry boxes.
+
+3. implement infinite scroll box to contain masonry.
+
+4. Replace flipcards with Foundation Modal boxes.
+
+5. Add user profiles through firebase. Append user login requirement to submission form.
