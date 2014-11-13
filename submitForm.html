@@ -4,7 +4,7 @@
 <head>
     <title>Submit New Flyer</title>
 
-<link rel="stylesheet" href="css/foundation.css" />    
+<link rel="stylesheet" href="css/foundation.css" />
 <link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="img/foundation-icons/foundation-icons.css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -14,21 +14,27 @@
 
 <body class="blueback">
 
-<div class="icon-bar two-up fixed" id="headroomNav">
+<div class="icon-bar two-up bottomNav">
   <a class="item" href="index.html">
     <i class="fi-home"></i>
-    <label>Home</label>
   </a>
-  <a class="item" href="submitForm.html">
-    <i class="fi-page-add" id="menututorial"></i>
-    <label class="center" >Create</label>
+  <a class="item" onclick="updateFlyer();">
+    <i class="fi-check"></i>
   </a>
   <!--<a class="item" href="users.html">
     <i class="fi-torso"></i>
     <label>User</label>
   </a>-->
-</div>    
+</div>
 	<div class="seperator"></div>
+  <div class="row uncNavy fixed">
+    <div class="small-4 columns">
+<img src="img/unc_logo_white.png">
+    </div>
+    <div class="small-8 columns" style="height:69px;">
+      <h1 class="white" id="appTitle">ezFlyer</h1>
+    </div>
+  </div>
 
 
 
@@ -54,21 +60,23 @@
     </div>
 </div>
 <div class="row">
-    <div class="small-4 columns">
+    <div class="small-6 columns">
         <label class="white">Date
             <input id="flyDateInput" type="text" placeholder="Date" />
         </label>
     </div>
-    <div class="small-4 columns">
+    <div class="small-6 columns">
         <label class="white">Time
             <input id="flyTimeInput" type="text" placeholder="When" />
         </label>
     </div>
-    <div class="small-4 columns">
-        <label class="white">Location
-            <input id="flyPlaceInput" type="text" placeholder="Where" />
-        </label>
-    </div>
+</div>
+<div class="row">
+  <div class="small-12 columns">
+      <label class="white">Location
+          <input id="flyPlaceInput" type="text" placeholder="Where" />
+      </label>
+  </div>
 </div>
 <div class="row">
     <div class="small-12 columns">
@@ -91,11 +99,7 @@
   </div>-->
 </form>
 
-<div class="row">
-    <div class="small-12 columns">
-        <button onclick="updateFlyer();">Submit</button>
-    </div>
-</div>
+
 
 <!-- JS STARTS HERE -->
 
@@ -106,9 +110,9 @@
       headroom.init();
     </script>
  <script>
-  
-    
-    
+
+
+
  </script>
 
 </body>

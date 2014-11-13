@@ -5,15 +5,13 @@
 }
 
 .blueback{
-    background-color: #56A0D3;
-    border: 0px;
+    background-color: #6E899C;
 }
 
 
 .seperator,
 .panel .seperator{
-    margin-bottom: 1.25em;
-    margin-top: 84px;
+    margin-top: 70px;
 }
 
 .uncNavy{
@@ -22,14 +20,14 @@
 
 #masonBox{
     background-color: #56A0D3;
-    padding: 5px;
-    padding-top: 10px;
+    padding: 0px;
+    padding-top: 0px;
     border-top: 2px solid white;
 }
 
 .mason{
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 
@@ -43,7 +41,7 @@
     transform: translateY(0%);
 }
 .headroom--unpinned {
-    transform: translateY(-100%);
+    transform: translateY(100%);
 }
 
 /*HEADROOM CSS ENDS */
@@ -52,4 +50,10 @@
 #appTitle{
     position: relative;
     top: 10px;
+}
+
+.bottomNav{
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
 }

@@ -11,19 +11,17 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
     <script src="js/app.js"></script>
-    
+
   </head>
   <body class="blueback">
-    
 
-<div class="icon-bar three-up fixed" id="headroomNav">
+
+<div class="icon-bar three-up bottomNav" id="headroomNav">
   <a class="item">
     <i class="fi-home"></i>
-    <label>Home</label>
   </a>
   <a class="item" href="submitForm.html">
     <i class="fi-page-add" id="menututorial"></i>
-    <label class="center" >Create</label>
   </a>
   <!--<a class="item" href="users.html">
     <i class="fi-torso"></i>
@@ -31,28 +29,27 @@
   </a>-->
   <a class="item" href="index.html">
     <i class="fi-refresh"></i>
-    <label>Refresh</label>
   </a>
-</div>    
+</div>
 <div class="seperator"></div>
-    <div class="row">
+    <div class="row uncNavy fixed">
       <div class="small-4 columns">
 	<img src="img/unc_logo_white.png">
       </div>
-      <div class="small-8 columns blueback" style="height:69px;">
+      <div class="small-8 columns" style="height:69px;">
         <h1 class="white" id="appTitle">ezFlyer</h1>
       </div>
     </div>
     <div class="row">
 	<div class="small-12 columns" id="masonBox">
-	    
-        </div>  
+
+        </div>
     </div>
-    
-    
+
+
     <div id="myModal" class="reveal-modal" data-reveal></div>
-	
-    
+
+
     <!-- <ol class="joyride-list" data-joyride>
       <li data-button="Next" data-options="prev_button: false">
 	<h4>Welcome!</h4>
@@ -69,8 +66,8 @@
 	<p>With ezFlyer you'll always know what's happening on campus.</p>
       </li>
     </ol> -->
-    
-    
+
+
     <!-- JS Starts here -->
     <script src="js/masonry.pkgd.js"></script>
     <script>
@@ -82,14 +79,14 @@
 	gutter: 10
       });
     </script>
-    
+
     <script src="js/headroom.js"></script>
     <script>
       var myElement = document.querySelector("#headroomNav");
       var headroom = new Headroom(myElement);
       headroom.init();
     </script>
-    
+
     <!--<script src="phonegap.js"></script>-->
     <script src="js/foundation/foundation.js"></script>
     <script src="js/foundation/foundation.reveal.js"></script>
