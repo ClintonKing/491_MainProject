@@ -11,7 +11,11 @@
 
 .seperator,
 .panel .seperator{
-    margin-top: 70px;
+    margin-top: 42px;
+}
+
+.uncLogo{
+  height:40px;
 }
 
 .uncNavy{
