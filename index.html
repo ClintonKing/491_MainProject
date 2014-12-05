@@ -34,14 +34,15 @@
   </a>
 </div>
 
-<div class="seperator"></div>
-    <div class="row uncNavy fixed">
-      <div class="small-12 columns text-center">
-	<img src="img/unc_logo_white.png" class="uncLogo">
-      </div>
-    </div>
-    <div class="row">
-	<div class="small-12 columns" id="masonBox">
+<div class="seperator" id="topOfPage"></div>
+<a href="#topOfPage"><div class="row uncNavy fixed">
+  <div class="small-12 columns text-center">
+	  <img src="img/unc_logo_white.png" class="uncLogo">
+  </div>
+</div></a>
+
+<div class="row">
+<div class="small-12 columns text-center" id="masonBox">
 
         </div>
     </div>
@@ -49,7 +50,7 @@
 
     <div id="myModal" class="reveal-modal" data-reveal></div>
 
-    <!--<button onclick="vexTest();">Test Vex</button> DELETE THIS LATER -->
+    <button onclick="vexTest();">Test Vex</button>
 
     <!-- <ol class="joyride-list" data-joyride>
       <li data-button="Next" data-options="prev_button: false">
@@ -71,15 +72,15 @@
 
     <!-- JS Starts here -->
     <script src="js/masonry.pkgd.js"></script>
-    <script>
+    <!--<script>
       var container = document.querySelector('#masonBox');
       var msnry = new Masonry( container, {
 	//options
-	columnWidth: '.mason.w2',
+	columnWidth: '.mason',
 	itemSelector: '.mason',
 	gutter: 10
       });
-    </script>
+    </script> -->
 
     <script src="js/headroom.js"></script>
     <script>
@@ -101,6 +102,14 @@
     </script>
     <script>
       $(document).foundation('joyride', 'start');
+    </script>
+    <script>
+      $('a').click(function(){
+          $('html, body').animate({
+              scrollTop: $( $.attr(this, 'href') ).offset().top
+          }, 500);
+          return false;
+      });
     </script>
   </body>
 </html>

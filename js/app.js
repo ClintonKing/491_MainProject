@@ -8,7 +8,6 @@ $( document ).ready(function() {
 });
 
 
-
 function updateFlyer(){
       var flyerListRef = new Firebase('https://ezflyer.firebaseio.com//flyers')
 
@@ -30,7 +29,7 @@ function updateFlyer(){
 function loadFlyer(){
     var flyerListRef = new Firebase('https://ezflyer.firebaseio.com//flyers')
 
-    var flyersToDisplay = 12;
+    var flyersToDisplay = 1000;
     var flyerListView = flyerListRef.limit(flyersToDisplay);
 
     flyerListRef.once('value', function(dataSnapshot){
